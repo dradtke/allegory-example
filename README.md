@@ -2,4 +2,4 @@ This repo contains an example utilizing the [gopher](https://github.com/dradtke/
 
 ![screenshot](https://github.com/dradtke/gopher-example/raw/master/screenshot.png)
 
-Art assets courtesy of [Kenney](www.kenney.nl).
+Art assets courtesy of [Kenney](http://www.kenney.nl).
