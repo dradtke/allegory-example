@@ -1,10 +1,10 @@
 package actors
 
 import (
-	"../commands"
-	"../globals"
 	"github.com/dradtke/go-allegro/allegro"
 	"github.com/dradtke/gopher"
+	"github.com/dradtke/gopher-example/main/game/commands"
+	"github.com/dradtke/gopher-example/main/game/globals"
 	"github.com/dradtke/gopher/cache"
 )
 

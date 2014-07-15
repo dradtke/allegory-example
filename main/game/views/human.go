@@ -1,10 +1,10 @@
 package views
 
 import (
-	"../commands"
-	"../field"
 	"github.com/dradtke/go-allegro/allegro"
 	"github.com/dradtke/gopher"
+	"github.com/dradtke/gopher-example/main/game/commands"
+	"github.com/dradtke/gopher-example/main/game/field"
 )
 
 type HumanView struct {

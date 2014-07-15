@@ -1,10 +1,10 @@
 package loading
 
 import (
-	"../game/globals"
 	"github.com/dradtke/go-allegro/allegro"
 	"github.com/dradtke/go-allegro/allegro/font"
 	"github.com/dradtke/gopher"
+	"github.com/dradtke/gopher-example/main/game/globals"
 	"os"
 	"path/filepath"
 )

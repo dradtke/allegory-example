@@ -1,10 +1,10 @@
 package game
 
 import (
-	"./actors"
-	"./field"
-	"./views"
 	"github.com/dradtke/gopher"
+	"github.com/dradtke/gopher-example/main/game/actors"
+	"github.com/dradtke/gopher-example/main/game/field"
+	"github.com/dradtke/gopher-example/main/game/views"
 	"github.com/dradtke/gopher/config"
 )
 

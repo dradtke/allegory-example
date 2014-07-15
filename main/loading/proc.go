@@ -1,9 +1,9 @@
 package loading
 
 import (
-	"../game"
 	"fmt"
 	"github.com/dradtke/gopher"
+	"github.com/dradtke/gopher-example/main/game"
 	"github.com/dradtke/gopher/cache"
 	"os"
 )
