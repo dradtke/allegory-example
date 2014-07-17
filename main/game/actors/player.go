@@ -1,15 +1,15 @@
 package actors
 
 import (
+	"github.com/dradtke/allegory"
+	"github.com/dradtke/allegory-example/main/game/commands"
+	"github.com/dradtke/allegory-example/main/game/globals"
+	"github.com/dradtke/allegory/cache"
 	"github.com/dradtke/go-allegro/allegro"
-	"github.com/dradtke/gopher"
-	"github.com/dradtke/gopher-example/main/game/commands"
-	"github.com/dradtke/gopher-example/main/game/globals"
-	"github.com/dradtke/gopher/cache"
 )
 
 type Player struct {
-	gopher.BaseActor
+	allegory.BaseActor
 
 	img     *allegro.Bitmap
 	flipped bool

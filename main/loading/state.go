@@ -1,16 +1,16 @@
 package loading
 
 import (
+	"github.com/dradtke/allegory"
+	"github.com/dradtke/allegory-example/main/game/globals"
 	"github.com/dradtke/go-allegro/allegro"
 	"github.com/dradtke/go-allegro/allegro/font"
-	"github.com/dradtke/gopher"
-	"github.com/dradtke/gopher-example/main/game/globals"
 	"os"
 	"path/filepath"
 )
 
 type LoadingState struct {
-	gopher.BaseState
+	allegory.BaseState
 }
 
 func AddImages(images *[]string, dir string) {
@@ -27,10 +27,10 @@ func (s *LoadingState) InitState() {
 		images := make([]string, 0)
 		AddImages(&images, globals.TILE_ASSETS)
 		AddImages(&images, globals.PLAYER_ASSETS)
-		gopher.RunProcess(&load{Images: images})
+		allegory.RunProcess(&load{Images: images})
 	}()
 }
 
 func (s *LoadingState) RenderState(delta float32) {
-	font.DrawText(gopher.BuiltinFont(), allegro.MapRGB(255, 255, 255), 10, 10, font.ALIGN_LEFT, "Loading...")
+	font.DrawText(allegory.BuiltinFont(), allegro.MapRGB(255, 255, 255), 10, 10, font.ALIGN_LEFT, "Loading...")
 }

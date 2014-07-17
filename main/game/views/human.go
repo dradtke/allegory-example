@@ -1,14 +1,14 @@
 package views
 
 import (
+	"github.com/dradtke/allegory"
+	"github.com/dradtke/allegory-example/main/game/commands"
+	"github.com/dradtke/allegory-example/main/game/field"
 	"github.com/dradtke/go-allegro/allegro"
-	"github.com/dradtke/gopher"
-	"github.com/dradtke/gopher-example/main/game/commands"
-	"github.com/dradtke/gopher-example/main/game/field"
 )
 
 type HumanView struct {
-	gopher.BaseView
+	allegory.BaseView
 
 	leftDown  bool
 	rightDown bool
@@ -16,7 +16,7 @@ type HumanView struct {
 	downDown  bool
 }
 
-var _ gopher.View = (*HumanView)(nil)
+var _ allegory.View = (*HumanView)(nil)
 
 func (v *HumanView) HandleEvent(msg interface{}) bool {
 	switch e := msg.(type) {

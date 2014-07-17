@@ -2,14 +2,14 @@ package actors
 
 import (
 	"fmt"
+	"github.com/dradtke/allegory"
+	"github.com/dradtke/allegory-example/main/game/globals"
+	"github.com/dradtke/allegory/cache"
 	"github.com/dradtke/go-allegro/allegro"
-	"github.com/dradtke/gopher"
-	"github.com/dradtke/gopher-example/main/game/globals"
-	"github.com/dradtke/gopher/cache"
 )
 
 type Box struct {
-	gopher.BaseActor
+	allegory.BaseActor
 	img *allegro.Bitmap
 }
 
@@ -40,7 +40,7 @@ func NewBox(x, y float32, state BoxState) *Box {
 	default:
 		panic(fmt.Sprintf("unknown box state: %d", state))
 	}
-	return &Box{BaseActor: gopher.BaseActor{x * globals.TILE_SIZE, y * globals.TILE_SIZE, 0, 0}, img: cache.Image(globals.TILE_ASSETS + img)}
+	return &Box{BaseActor: allegory.BaseActor{x * globals.TILE_SIZE, y * globals.TILE_SIZE, 0, 0}, img: cache.Image(globals.TILE_ASSETS + img)}
 }
 
 func (b *Box) UpdateActor() {

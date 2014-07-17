@@ -1,16 +1,16 @@
 package main
 
 import (
-	"github.com/dradtke/gopher"
-	"github.com/dradtke/gopher-example/main/loading"
-	"github.com/dradtke/gopher/config"
+	"github.com/dradtke/allegory"
+	"github.com/dradtke/allegory-example/main/loading"
+	"github.com/dradtke/allegory/config"
 )
 
 func main() {
 	config.SetDisplaySize(700, 350)
-	config.SetPackageRoot("github.com/dradtke/gopher-example")
+	config.SetPackageRoot("github.com/dradtke/allegory-example")
 
-	gopher.Init(new(loading.LoadingState))
-	defer gopher.Cleanup()
-	gopher.Loop()
+	allegory.Init(new(loading.LoadingState))
+	defer allegory.Cleanup()
+	allegory.Loop()
 }

@@ -2,9 +2,9 @@ package loading
 
 import (
 	"fmt"
-	"github.com/dradtke/gopher"
-	"github.com/dradtke/gopher-example/main/game"
-	"github.com/dradtke/gopher/cache"
+	"github.com/dradtke/allegory"
+	"github.com/dradtke/allegory-example/main/game"
+	"github.com/dradtke/allegory/cache"
 	"os"
 )
 
@@ -13,7 +13,7 @@ type load struct {
 	loading bool
 }
 
-var _ gopher.Process = (*load)(nil)
+var _ allegory.Process = (*load)(nil)
 
 func (p *load) InitProcess() {
 	p.loading = true
